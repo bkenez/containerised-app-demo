@@ -2,9 +2,7 @@
 
 This is a small, relatively useless web application that demonstrates a few basic concepts in order to showcase parts of my skillset. It communicates with GitHub over HTTP. The application's main goal is to convert the SSH public keys of a specified user on GitHub into another machine-readable format, specifically JSON.
 
-### Repository
-
-A GitHub repository was created for this task. The repository can be found at the following URL: [https://github.com/vistrcm](https://github.com/vistrcm). The repository can be either public or private, and it has been shared with the interviewer from PolySign.
+We are using the https://github.com/bkenez.keys as our source
 
 ### Application
 
