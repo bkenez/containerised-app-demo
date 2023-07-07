@@ -1,4 +1,4 @@
-## Documentation: GitHub SSH Key Conversion Web Application
+## GitHub SSH Key Conversion Web Application
 
 This is a small, relatively useless web application that demonstrates a few basic concepts in order to showcase parts of my skillset. It communicates with GitHub over HTTP. The application's main goal is to convert the SSH public keys of a specified user on GitHub into another machine-readable format, specifically JSON.
 
