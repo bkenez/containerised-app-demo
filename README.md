@@ -2,7 +2,7 @@
 
 This is a small, relatively useless web application that demonstrates a few basic concepts in order to showcase parts of my skillset. It communicates with GitHub over HTTP. The application's main goal is to convert the SSH public keys of a specified user on GitHub into another machine-readable format, specifically JSON.
 
-We are using the https://github.com/bkenez.keys as our source
+We are using GitHub's https://github.com/bkenez.keys endpoint as our source
 
 ### Application
 
@@ -12,23 +12,9 @@ The web application consists of a single endpoint located at `/github_keys/<user
 
 The application accepts `GET` requests to the `/github_keys/<username>` endpoint.
 
-#### Output
+#### Example Output
 
-The response from the endpoint is a JSON structure representing a list of SSH keys for the specified GitHub user. Each key in the list includes two fields: `key_type` and `key_value`.
-
-Here is an example of the expected response format:
-```json
-[
-  {
-    "type": "<key_type>",
-    "key": "<key_value>"
-  }
-]
-```
-
-#### Example
-
-Suppose we make a `GET` request to the endpoint `/github_keys/USERNAME`. The response would be as follows:
+Suppose we make a `GET` request to the endpoint `/github_keys/USERNAME`. The  response would be as follows:
 ```json
 [
   {
@@ -44,7 +30,7 @@ Suppose we make a `GET` request to the endpoint `/github_keys/USERNAME`. The res
 
 ### Build
 
-To build an image for the web application, a Dockerfile is provided. The Dockerfile contains the necessary instructions to create the image.
+To build an image for the web application, a Dockerfile is provided. The Dockerfile contains the necessary instructions to create the image. 
 
 ### Delivery Pipeline
 
